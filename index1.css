@@ -1,0 +1,86 @@
+.nav-links {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position it above the content*/
+    top: 40px; /* Adjust to place it below the menu icon */
+    left: 0;
+    width:15%; /* half width for the menu */
+    text-align: center; /* Center the links */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+    margin-right: 800px;
+    margin-bottom: 150px;
+    transition: opacity 1s ease; transform: 1s ease; /* Smooth transition */
+    transform: translateY(-20px); /* Start slightly above */
+    opacity: 0; /* Start fully transparent */
+    background-image: url(IMG-20240614-WA0002.jpg); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    
+}
+
+.nav-links.active {
+    display: block; /* Show the menu when active */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+    margin-bottom: 100px;
+}
+.content {
+    position: relative; /* Ensure the content is positioned correctly */
+    z-index: 1; /* Keep it below the menu */
+    margin-top: 150px; /* Adjust to create space for the menu */
+    text-decoration: solid;
+    text-align: center;
+    font-size: 20px;
+}
+body {
+background-image: url(1725981031956.jpg); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    font-family: Arial, sans-serif; /* Use a clean font */
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+    font-size: large; /* Set a default font size */
+    text-align: center; /* Center the text */
+    font-weight: bold;
+}
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    position: relative; /* Ensure the image is positioned correctly */
+    z-index: 1100; /* Keep it above the menu */
+}
+li {
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:10px;
+    padding: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    list-style: none; /* Remove default list styling */
+    
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 10px;
+    padding-right:26px;
+    margin-right: 800px;
+    margin-bottom: 5px;
+    background-color: blue; /* Set the default background color */
+    transition: background-color 3s ease, padding 1s ease; /* Smooth transition for background and padding */
+}
+
+.nav-links a:hover {
+    background-color: rgb(33, 226, 226); /* Smoothly transition to this color */
+    border-radius: 50px; /* Rounded corners */
+    padding: 12px; /* Smoothly transition padding */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}

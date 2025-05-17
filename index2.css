@@ -1,0 +1,100 @@
+.nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: absolute; /* Position it above the content */
+    top: 0; /* Align it to the top */
+    left: 0;
+    width: 100%; /* Full width for the menu */
+    background-image: url(1725981031956.jpg); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    padding: 20px 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-20px); /* Start slightly above */
+    margin-top: 0%; /* Adjust to create space for the menu */
+    margin-bottom: 0%; /* Adjust to create space for the menu */
+    padding-top: 0%; /* Adjust to create space for the menu */
+    padding-bottom: 0%; /* Adjust to create space for the menu */
+}
+
+.nav-links.active {
+    display: flex; /* Use Flexbox when active */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+.menu-icon.hidden {
+    display: none; /* Hide the menu icon when the menu is active */
+}
+body {
+    background-image: url(IMG-20240916-WA0018.jpg); /* Background image */
+    background-size: cover; /* Make the image cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    font-family: Arial, sans-serif; /* Use a clean font */
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+    font-size: large; /* Set a default font size */
+    text-align: center; /* Center the text */
+    font-weight: bold;
+}
+     p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        font-weight: 800;
+        font-style: italic;
+    }
+      .content {
+    position: relative; /* Ensure the content is positioned correctly */  
+    padding: 20px; /* Add padding for spacing */
+        margin-top: 100px;
+    }
+    
+.nav-links li {
+    list-style: none; /* Remove default list styling */
+    margin: 10px 0; /* Add spacing between items */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    padding: 10px 20px; /* Add padding around links */
+    background-color: blue; /* Background color for links */
+ 
+    transition: background-color 3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    background-color: darkgreen; /* Change background color on hover */
+    border-radius: 50px; /* Rounded corners */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    position: relative; /* Ensure the image is positioned correctly */
+    z-index: 1100; /* Keep it above the menu */
+}
+li {
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:10px;
+    padding: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    list-style: none; /* Remove default list styling */
+    
+    
+}
